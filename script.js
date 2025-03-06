@@ -20,7 +20,7 @@ async function fetchData()
 {
 	let data = await promise1();
 	let output= document.getElementById("output");
-	output.innerHTML=`<p>${data}</p>
-	<p>${Number(number.value)}</p>`
+	output.innerHTML=`<p>"${data}-${number.value}"</p>
+	`
 }
 btn.addEventListener("click",fetchData);
